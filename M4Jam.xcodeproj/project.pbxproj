@@ -12,6 +12,7 @@
 		92C1F3D41F0A2C170023E775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C1F3D21F0A2C170023E775 /* Main.storyboard */; };
 		92C1F3D61F0A2C170023E775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C1F3D51F0A2C170023E775 /* Assets.xcassets */; };
 		92C1F3D91F0A2C170023E775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C1F3D71F0A2C170023E775 /* LaunchScreen.storyboard */; };
+		A1898BC21F0A403400EC81B8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1898BC11F0A403300EC81B8 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		92C1F3D51F0A2C170023E775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92C1F3D81F0A2C170023E775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92C1F3DA1F0A2C170023E775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1898BC11F0A403300EC81B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1898BC21F0A403400EC81B8 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				92C1F3CD1F0A2C170023E775 /* M4Jam */,
 				92C1F3CC1F0A2C170023E775 /* Products */,
+				A1898BC01F0A403300EC81B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				92C1F3DA1F0A2C170023E775 /* Info.plist */,
 			);
 			path = M4Jam;
+			sourceTree = "<group>";
+		};
+		A1898BC01F0A403300EC81B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1898BC11F0A403300EC81B8 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +316,7 @@
 				92C1F3DF1F0A2C170023E775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
