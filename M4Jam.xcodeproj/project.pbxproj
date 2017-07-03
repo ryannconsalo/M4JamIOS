@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					92C1F3CA1F0A2C170023E775 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8T292GBJ5W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -262,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8T292GBJ5W;
 				INFOPLIST_FILE = M4Jam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ryann-Consalo.M4Jam";
@@ -274,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8T292GBJ5W;
 				INFOPLIST_FILE = M4Jam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ryann-Consalo.M4Jam";
