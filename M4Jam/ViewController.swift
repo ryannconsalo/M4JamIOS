@@ -5,22 +5,30 @@
 //  Created by Ryann Consalo on 2017/07/03.
 //  Copyright © 2017 Ryann Consalo. All rights reserved.
 //
+//
 
 import UIKit
 import WebKit
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate, WKNavigationDelegate {
+    
+    var webView: WKWebView!
     
     let locationManager = CLLocationManager()
 
-    @IBOutlet weak var webView: UIWebView!
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myURL = URL(string: "https://app.m4jam.com/app/client/jobbers/sign-up/#login")
-        webView.loadRequest(URLRequest(url: myURL!))
+        let url = URL(string: "https://app.m4jam.com/app/client/jobbers/sign-up/#login")!
+        webView.load(URLRequest(url: url))
+        //webView.allowsBackForwardNavigationGestures = true
         
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
@@ -30,6 +38,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if CLLocationManager.locationServicesEnabled() {
             locationManager.startUpdatingLocation()
         }
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -49,5 +58,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
 
+    func loadURL() {
+        let urlString = "https://app.m4jam.com/app/client/jobbers/sign-up/#login"
+        guard let url = NSURL(string: urlString) else {return}
+        let request = NSMutableURLRequest(url:url as URL)
+        webView.load(request as URLRequest)
+    }
+    
 }
 
