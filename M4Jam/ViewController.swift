@@ -39,6 +39,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
             locationManager.startUpdatingLocation()
         }
         
+        print("disappearing")
+        webView.evaluateJavaScript("document.getElementById('password').innerText") { (result, error) in
+            if error != nil {
+                print("no error")
+            }
+            if error == nil {
+                print("error")
+            }
+        }
+        
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("disappearing")
+        webView.evaluateJavaScript("document.getElementById('password').innerText") { (result, error) in
+            if error != nil {
+                print(result)
+            }
+            if error == nil {
+                print(result)
+            }
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
