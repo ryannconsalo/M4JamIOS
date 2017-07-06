@@ -11,7 +11,7 @@ import UIKit
 import WebKit
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler {
+class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate, WKNavigationDelegate {
     
     var webView: WKWebView!
     let userContentController = WKUserContentController()
@@ -25,7 +25,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
         config.userContentController = userContentController
         
         self.webView = WKWebView(frame: self.view.bounds, configuration: config)
-        userContentController.add(self, name: "userLogin")
+        //userContentController.add(self, name: "userLogin")
         
         webView.navigationDelegate = self
         view = webView
@@ -33,35 +33,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //let configuration = WKWebViewConfiguration()
-        //let controller = WKUserContentController()
-        
-        //controller.add(WKScriptMessageHandler: self, name: 'JSListener')
-        //configuration.userContentController = controller
-        
-        let url = URL(string: "https://app.m4jam.com/app/client/jobbers/sign-up/#login")!
-        webView.load(URLRequest(url: url))
-        //webView.allowsBackForwardNavigationGestures = true
-        
-        locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
-        locationManager.distanceFilter = 10000
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.startUpdatingLocation()
-        }
-        
-        print("disappearing")
-        webView.evaluateJavaScript("document.getElementById('toggle-sign-up').textContent") { (result, error) in
-            if error != nil {
-                print(result)
-            }
-            if error == nil {
-                print(result)
-            }
-        }
         
         var request = URLRequest(url: URL(string: "https://app.m4jam.com//api-token/")!)
         request.httpMethod = "POST"
@@ -86,21 +57,54 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
              }*/
             print("responseString = \(responseString!)")
             
-            let responseStringArray = responseString?.components(separatedBy: ":")
-            print(responseStringArray![1])
-            var a = responseStringArray![1]
-            
+            let responseStringArray = responseString?.components(separatedBy: "\"")
+            print(responseStringArray![3])
+            // Save user token in user defaults for key "token"
+            UserDefaults.standard.set(responseStringArray![3], forKey: "token")
             
         }
         task.resume()
 
+        
+        //let configuration = WKWebViewConfiguration()
+        //let controller = WKUserContentController()
+        
+        //controller.add(WKScriptMessageHandler: self, name: 'JSListener')
+        //configuration.userContentController = controller
+        
+        let url = URL(string: "https://app.m4jam.com/app/client/jobbers/sign-up/#login")!
+        webView.load(URLRequest(url: url))
+        //webView.allowsBackForwardNavigationGestures = true
+        
+        /*
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        locationManager.distanceFilter = 10000
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.startUpdatingLocation()
+        }
+        
+        print("disappearing")
+        webView.evaluateJavaScript("document.getElementById('toggle-sign-up').textContent") { (result, error) in
+            if error != nil {
+                print(result)
+            }
+            if error == nil {
+                print(result)
+            }
+        }
+        
+        
+*/
         
         
     }
     
     
     override func viewWillDisappear(_ animated: Bool) {
-        print("disappearing")
+        /*print("disappearing")
         webView.evaluateJavaScript("document.getElementById('password').innerText") { (result, error) in
             if error != nil {
                 print(result)
@@ -109,6 +113,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
                 print(result)
             }
         }
+ */
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -136,12 +141,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
     }
  */
     
-    
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        let dict = message.body as! [String: AnyObject]
-        let username = dict["username"] as! String
-        let secretToken = dict["secretToken"] as! String
-    }
     
     
 }
