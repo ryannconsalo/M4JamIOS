@@ -76,7 +76,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
         webView.load(URLRequest(url: url))
         //webView.allowsBackForwardNavigationGestures = true
         
-        /*
+        
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
@@ -96,8 +96,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
             }
         }
         
-        
-*/
         
         
     }
@@ -130,18 +128,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-/*
-    func loadURL() {
-        let urlString = "https://app.m4jam.com/app/client/jobbers/sign-up/#login"
-        guard let url = NSURL(string: urlString) else {return}
-        let request = NSMutableURLRequest(url:url as URL)
-        webView.load(request as URLRequest)
-    }
- */
-    
-    
+    }    
     
 }
 
