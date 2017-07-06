@@ -11,20 +11,34 @@ import UIKit
 import WebKit
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate, WKNavigationDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler {
     
     var webView: WKWebView!
+    let userContentController = WKUserContentController()
     
     let locationManager = CLLocationManager()
 
     override func loadView() {
-        webView = WKWebView()
+        super.loadView()
+        
+        let config = WKWebViewConfiguration()
+        config.userContentController = userContentController
+        
+        self.webView = WKWebView(frame: self.view.bounds, configuration: config)
+        userContentController.add(self, name: "userLogin")
+        
         webView.navigationDelegate = self
         view = webView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //let configuration = WKWebViewConfiguration()
+        //let controller = WKUserContentController()
+        
+        //controller.add(WKScriptMessageHandler: self, name: 'JSListener')
+        //configuration.userContentController = controller
         
         let url = URL(string: "https://app.m4jam.com/app/client/jobbers/sign-up/#login")!
         webView.load(URLRequest(url: url))
@@ -40,14 +54,47 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
         }
         
         print("disappearing")
-        webView.evaluateJavaScript("document.getElementById('password').innerText") { (result, error) in
+        webView.evaluateJavaScript("document.getElementById('toggle-sign-up').textContent") { (result, error) in
             if error != nil {
-                print("no error")
+                print(result)
             }
             if error == nil {
-                print("error")
+                print(result)
             }
         }
+        
+        var request = URLRequest(url: URL(string: "https://app.m4jam.com//api-token/")!)
+        request.httpMethod = "POST"
+        let postString = "username=27649862819&password=213emily"
+        request.httpBody = postString.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)!")
+            }
+            
+            let responseString = String(data: data, encoding: .utf8)
+            /* for (key, value) in responseString {
+             if (key as! String == "token") {
+             print(value)
+             }
+             }*/
+            print("responseString = \(responseString!)")
+            
+            let responseStringArray = responseString?.components(separatedBy: ":")
+            print(responseStringArray![1])
+            var a = responseStringArray![1]
+            
+            
+        }
+        task.resume()
+
+        
         
     }
     
@@ -80,13 +127,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
         // Dispose of any resources that can be recreated.
     }
 
-
+/*
     func loadURL() {
         let urlString = "https://app.m4jam.com/app/client/jobbers/sign-up/#login"
         guard let url = NSURL(string: urlString) else {return}
         let request = NSMutableURLRequest(url:url as URL)
         webView.load(request as URLRequest)
     }
+ */
+    
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        let dict = message.body as! [String: AnyObject]
+        let username = dict["username"] as! String
+        let secretToken = dict["secretToken"] as! String
+    }
+    
     
 }
 
