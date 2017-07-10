@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9226918D1F0F7B7B00A45977 /* m4jam.js in Resources */ = {isa = PBXBuildFile; fileRef = 9226918C1F0F7B7B00A45977 /* m4jam.js */; };
 		92C1F3CF1F0A2C170023E775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C1F3CE1F0A2C170023E775 /* AppDelegate.swift */; };
 		92C1F3D11F0A2C170023E775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C1F3D01F0A2C170023E775 /* ViewController.swift */; };
 		92C1F3D41F0A2C170023E775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C1F3D21F0A2C170023E775 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9226918C1F0F7B7B00A45977 /* m4jam.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = m4jam.js; sourceTree = "<group>"; };
 		92C1F3CB1F0A2C170023E775 /* M4Jam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M4Jam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C1F3CE1F0A2C170023E775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C1F3D01F0A2C170023E775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				92C1F3D01F0A2C170023E775 /* ViewController.swift */,
 				92C1F3D21F0A2C170023E775 /* Main.storyboard */,
 				92C1F3D51F0A2C170023E775 /* Assets.xcassets */,
+				9226918C1F0F7B7B00A45977 /* m4jam.js */,
 				92C1F3D71F0A2C170023E775 /* LaunchScreen.storyboard */,
 				92C1F3DA1F0A2C170023E775 /* Info.plist */,
 			);
@@ -108,7 +111,7 @@
 				TargetAttributes = {
 					92C1F3CA1F0A2C170023E775 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8T292GBJ5W;
+						DevelopmentTeam = UCW2RBA58C;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -141,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9226918D1F0F7B7B00A45977 /* m4jam.js in Resources */,
 				92C1F3D91F0A2C170023E775 /* LaunchScreen.storyboard in Resources */,
 				92C1F3D61F0A2C170023E775 /* Assets.xcassets in Resources */,
 				92C1F3D41F0A2C170023E775 /* Main.storyboard in Resources */,
@@ -280,10 +284,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8T292GBJ5W;
+				DEVELOPMENT_TEAM = UCW2RBA58C;
 				INFOPLIST_FILE = M4Jam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ryann-Consalo.M4Jam";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.M4Jam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -293,10 +297,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8T292GBJ5W;
+				DEVELOPMENT_TEAM = UCW2RBA58C;
 				INFOPLIST_FILE = M4Jam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ryann-Consalo.M4Jam";
+				PRODUCT_BUNDLE_IDENTIFIER = "Emily-Koagedal.M4Jam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
