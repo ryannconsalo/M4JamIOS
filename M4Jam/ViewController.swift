@@ -62,9 +62,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         // Set accuracy to within one km in order to save battery
-        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
         // Will call location manager function when distance changes more than 10 km (10000 m)
-        locationManager.distanceFilter = 10000
+        locationManager.distanceFilter = 100
         
         // Start updating location if allowed
         if CLLocationManager.locationServicesEnabled() {
