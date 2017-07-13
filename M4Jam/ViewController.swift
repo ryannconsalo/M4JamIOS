@@ -33,13 +33,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
         config.userContentController = contentController
         
         // Set bounds and configuration to webView
+        // Start webView at y = 20 to be able to see time, battery, connection, etc.
         webView = WKWebView(frame: CGRect(x: 0, y: 20, width: view.bounds.width, height: view.bounds.height), configuration: config)
         webView.navigationDelegate = self
         
-        //self.webView!.backgroundColor = UIColor.blue
-        //self.webView!.isOpaque = false
-
-        // 61, 76, 85
+        // Get UIColor From RGB value
         func UIColorFromRGB(rgbValue: UInt) -> UIColor {
             return UIColor(
                 red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
@@ -49,11 +47,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
             )
         }
         
-        //self.webView.backgroundColor = UIColorFromRGB(rgbValue: 0x466373)
+        // Set background color of the view to match website
         self.webView!.backgroundColor = UIColor(red:0.24, green:0.30, blue:0.33, alpha:1.0)
         self.webView!.isOpaque = true
         
-        
+        // Add webView to the view
         view.addSubview(webView)
     }
     
