@@ -129,7 +129,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
         let url = URL(string: "https://app.m4jam.com/app/client/jobbers/sign-up/#login")!
         webView.load(URLRequest(url: url))
     }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        var connection = isConnectedToNetwork()
+        if (connection == false) {
+            let alert = UIAlertController(title: "No Connection", message: "Make sure your device is connected to the internet", preferredStyle: .alert)
+            let okAction = UIAlertAction(title:"Ok", style: UIAlertActionStyle.default){
+                UIAlertAction in
+                let connection = self.storyboard?.instantiateViewController(withIdentifier: "NoConnection")
+                self.present(connection!, animated: true, completion: nil)
+            }
+            let refreshAction = UIAlertAction(title:"Refresh", style: UIAlertActionStyle.default){
+                UIAlertAction in
+                NSLog("Refresh Page")
+                let page = self.storyboard?.instantiateViewController(withIdentifier: "mainPage")
+                self.present(page!, animated: true, completion: nil)
+            }
+            alert.addAction(okAction)
+            alert.addAction(refreshAction)
+            
+            self.present(alert, animated: true, completion: nil)
+        }
         
+    }
     
     // When view appears, check to see if internet connection exists
     // If yes, present the webView
