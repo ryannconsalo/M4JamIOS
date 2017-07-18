@@ -115,7 +115,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         // Set accuracy to within one km in order to save battery
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
     
         // Will call location manager function when distance changes more than 10 km (10000 m)
         locationManager.distanceFilter = 10000
@@ -150,7 +150,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
             
             self.present(alert, animated: true, completion: nil)
         }
-        
+
     }
     
     // When view appears, check to see if internet connection exists
