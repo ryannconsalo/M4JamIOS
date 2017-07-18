@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>Access Your Camera To Take Photos</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Access Your Photo Library To Upload Pictures</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -29,8 +25,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Access Your Camera To Take Photos</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Your location is used to update you on jobs in your area.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Access Your Photo Library To Upload Pictures</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
