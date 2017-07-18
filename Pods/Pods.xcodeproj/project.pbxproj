@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06E91CCB878123F6680D9E5303351353 /* NWType.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7DD48484A2DC9D8850BA2B0E2C7B49 /* NWType.m */; };
+		0AE0DCD4A3F59255090D2278E4138F7D /* NWType.h in Headers */ = {isa = PBXBuildFile; fileRef = 919FA9D18DA16A0D15C9BF4C679F6B4E /* NWType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12E5287F2489EB216AE3CC196F23EFAE /* NWPusher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 654E11B1D9417598F9D5CD684425C636 /* NWPusher-dummy.m */; };
+		3A8BABD02D50AD3F3D20466CC669371F /* NWNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A189D20D54E8450E1564240740E830 /* NWNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45FD148D6603B865A2259C0AB9DF3883 /* NWSecTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 81044779F35E8055FBCD2D6DF29FB7CB /* NWSecTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		544C83D8BFFAC643201991593C5459FC /* NWPushFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF689F855F51371A82B42272AEBEFF1 /* NWPushFeedback.m */; };
+		5711CF4FA33A56D49F7689F7254D49C8 /* NWPushFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B1BE7B51F497601F9C08F97E45CCF7 /* NWPushFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A83F0FA4B51B5FBB4EB947CD0EDF06B /* NWPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D8C54C4C78AA4447785FC9E71B90CF /* NWPusher.m */; };
+		5EBAFA6F0EDE762C46D112D7BA5F5F94 /* Pods-M4Jam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 814273C6E9DF65C69EB685CBAA457DD4 /* Pods-M4Jam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F6627E4CD0C040B6C1D7B69FBA862C9 /* NWPusher.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B9FDE0953CADFB3ABFF04E76252A7A /* NWPusher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		761C7D241D45219E5F9718AF4F4CCAF1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */; };
+		8AF012E1E6E988950A3C53687AD14DD6 /* NWSecTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E7B38A7E38E68A9F5FDBEDD5F65BF /* NWSecTools.m */; };
+		8E36171FD4B97714CDCB04767B986057 /* NWPusher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7790E07750872D9596AACFB7B199BA5 /* NWPusher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98D491BF3826DD5A4D5035FFF1A44888 /* NWSSLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B3640D0E48C963E938ACA0D2C9E65543 /* NWSSLConnection.m */; };
+		9C6C42E492C61EC310C28094C6CE0708 /* NWNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA619AC42D144A8615C91657871425A /* NWNotification.m */; };
+		AD86A1C63BC39D22A15C723FAF4E0C5B /* NWHub.m in Sources */ = {isa = PBXBuildFile; fileRef = BE72F1CE5A1F9BDB7F9B304D93EED926 /* NWHub.m */; };
+		B33521C962FE3810FD674B61C99CC7A5 /* NWSSLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B1D60E89E5C9DBCEA090E5DEC8E438 /* NWSSLConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4185043205B9AB26F107C6930724709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		BDECE3FA0467DD19ED926850E6CAFE3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		DDDED0387FBF99309D7FCF6D4DB2DB9A /* Pods-M4Jam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD640EA785339F0776204580E36BCD1 /* Pods-M4Jam-dummy.m */; };
+		E5DD176BC253BA369CB50E46448611B4 /* NWHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D88C1FC8FFA9C704E35CFB38E1B2546 /* NWHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD525E92F1AA650AD37018C93E0CEE2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC9B68D42FD26A60BCEB86272B1E82B2;
+			remoteInfo = NWPusher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09A10A77ABD4202C116A57098611595D /* Pods-M4Jam-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-M4Jam-resources.sh"; sourceTree = "<group>"; };
+		11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		20327BDB4A9097E61EF1CCC047147E73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1D2F31DEE6891E3EF5DA735F903A24 /* Pods-M4Jam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-M4Jam.modulemap"; sourceTree = "<group>"; };
+		53F0192F5BDB95A77E9BB1CFD5284811 /* NWPusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NWPusher.framework; path = NWPusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D88C1FC8FFA9C704E35CFB38E1B2546 /* NWHub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWHub.h; path = Classes/NWHub.h; sourceTree = "<group>"; };
+		654E11B1D9417598F9D5CD684425C636 /* NWPusher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NWPusher-dummy.m"; sourceTree = "<group>"; };
+		6DA686B7AAFD2BB4A0E759993E576793 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81044779F35E8055FBCD2D6DF29FB7CB /* NWSecTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWSecTools.h; path = Classes/NWSecTools.h; sourceTree = "<group>"; };
+		814273C6E9DF65C69EB685CBAA457DD4 /* Pods-M4Jam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-M4Jam-umbrella.h"; sourceTree = "<group>"; };
+		8AD640EA785339F0776204580E36BCD1 /* Pods-M4Jam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-M4Jam-dummy.m"; sourceTree = "<group>"; };
+		919FA9D18DA16A0D15C9BF4C679F6B4E /* NWType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWType.h; path = Classes/NWType.h; sourceTree = "<group>"; };
+		921CBA58FEC71B02E514F7081F9D537D /* Pods_M4Jam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_M4Jam.framework; path = "Pods-M4Jam.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99A189D20D54E8450E1564240740E830 /* NWNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWNotification.h; path = Classes/NWNotification.h; sourceTree = "<group>"; };
+		9BFE8E6C12C47CF27D52A6529724D4C8 /* NWPusher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NWPusher.xcconfig; sourceTree = "<group>"; };
+		9EA619AC42D144A8615C91657871425A /* NWNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWNotification.m; path = Classes/NWNotification.m; sourceTree = "<group>"; };
+		A8B9FDE0953CADFB3ABFF04E76252A7A /* NWPusher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWPusher.h; path = Classes/NWPusher.h; sourceTree = "<group>"; };
+		B32C70CB102E03551B0426B084E64322 /* Pods-M4Jam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-M4Jam.release.xcconfig"; sourceTree = "<group>"; };
+		B3640D0E48C963E938ACA0D2C9E65543 /* NWSSLConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWSSLConnection.m; path = Classes/NWSSLConnection.m; sourceTree = "<group>"; };
+		B64C170189AF25B8D0C3C34409F36284 /* Pods-M4Jam-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-M4Jam-frameworks.sh"; sourceTree = "<group>"; };
+		BE2F5A5542E16612ECEE00F546820AE7 /* Pods-M4Jam-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-M4Jam-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE72F1CE5A1F9BDB7F9B304D93EED926 /* NWHub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWHub.m; path = Classes/NWHub.m; sourceTree = "<group>"; };
+		C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C56E43679F8DEA99DC2D538B1553305D /* Pods-M4Jam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-M4Jam.debug.xcconfig"; sourceTree = "<group>"; };
+		C7790E07750872D9596AACFB7B199BA5 /* NWPusher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NWPusher-umbrella.h"; sourceTree = "<group>"; };
+		D4B1D60E89E5C9DBCEA090E5DEC8E438 /* NWSSLConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWSSLConnection.h; path = Classes/NWSSLConnection.h; sourceTree = "<group>"; };
+		D52E7B38A7E38E68A9F5FDBEDD5F65BF /* NWSecTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWSecTools.m; path = Classes/NWSecTools.m; sourceTree = "<group>"; };
+		DEF689F855F51371A82B42272AEBEFF1 /* NWPushFeedback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWPushFeedback.m; path = Classes/NWPushFeedback.m; sourceTree = "<group>"; };
+		E5D8C54C4C78AA4447785FC9E71B90CF /* NWPusher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWPusher.m; path = Classes/NWPusher.m; sourceTree = "<group>"; };
+		F2B1BE7B51F497601F9C08F97E45CCF7 /* NWPushFeedback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWPushFeedback.h; path = Classes/NWPushFeedback.h; sourceTree = "<group>"; };
+		F710027A73057ED9F08D305D179DF03D /* Pods-M4Jam-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-M4Jam-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9FAB3C446C85BA9AECADAB7D2524E5D /* NWPusher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NWPusher-prefix.pch"; sourceTree = "<group>"; };
+		FD7DD48484A2DC9D8850BA2B0E2C7B49 /* NWType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWType.m; path = Classes/NWType.m; sourceTree = "<group>"; };
+		FF725AE420D80751E1A33BEC685D2BDA /* NWPusher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NWPusher.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B1FC068F10CD142BB5F087E1B6861B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDECE3FA0467DD19ED926850E6CAFE3E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE19444A2E2E36EB8187EE539E18EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4185043205B9AB26F107C6930724709 /* Foundation.framework in Frameworks */,
+				761C7D241D45219E5F9718AF4F4CCAF1 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07971CB8BF6FC4FB4D0B6967079FF68D /* NWPusher */ = {
+			isa = PBXGroup;
+			children = (
+				5D88C1FC8FFA9C704E35CFB38E1B2546 /* NWHub.h */,
+				BE72F1CE5A1F9BDB7F9B304D93EED926 /* NWHub.m */,
+				99A189D20D54E8450E1564240740E830 /* NWNotification.h */,
+				9EA619AC42D144A8615C91657871425A /* NWNotification.m */,
+				A8B9FDE0953CADFB3ABFF04E76252A7A /* NWPusher.h */,
+				E5D8C54C4C78AA4447785FC9E71B90CF /* NWPusher.m */,
+				F2B1BE7B51F497601F9C08F97E45CCF7 /* NWPushFeedback.h */,
+				DEF689F855F51371A82B42272AEBEFF1 /* NWPushFeedback.m */,
+				81044779F35E8055FBCD2D6DF29FB7CB /* NWSecTools.h */,
+				D52E7B38A7E38E68A9F5FDBEDD5F65BF /* NWSecTools.m */,
+				D4B1D60E89E5C9DBCEA090E5DEC8E438 /* NWSSLConnection.h */,
+				B3640D0E48C963E938ACA0D2C9E65543 /* NWSSLConnection.m */,
+				919FA9D18DA16A0D15C9BF4C679F6B4E /* NWType.h */,
+				FD7DD48484A2DC9D8850BA2B0E2C7B49 /* NWType.m */,
+				8C49DC8AED5463B0F610ED4C13C551E4 /* Support Files */,
+			);
+			name = NWPusher;
+			path = NWPusher;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F990579C2E52276FD3C28227B49D60B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F990579C2E52276FD3C28227B49D60B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */,
+				C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				8010A4685BC54EC553E2E313658ED04D /* Pods */,
+				88A494A1D35181C15B43420A75AA8102 /* Products */,
+				CBC9D555DA8EB73DA4FD86AAF0051C10 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E06F9155189A4A4AB8149D0AD5F744C /* Pods-M4Jam */ = {
+			isa = PBXGroup;
+			children = (
+				20327BDB4A9097E61EF1CCC047147E73 /* Info.plist */,
+				2C1D2F31DEE6891E3EF5DA735F903A24 /* Pods-M4Jam.modulemap */,
+				F710027A73057ED9F08D305D179DF03D /* Pods-M4Jam-acknowledgements.markdown */,
+				BE2F5A5542E16612ECEE00F546820AE7 /* Pods-M4Jam-acknowledgements.plist */,
+				8AD640EA785339F0776204580E36BCD1 /* Pods-M4Jam-dummy.m */,
+				B64C170189AF25B8D0C3C34409F36284 /* Pods-M4Jam-frameworks.sh */,
+				09A10A77ABD4202C116A57098611595D /* Pods-M4Jam-resources.sh */,
+				814273C6E9DF65C69EB685CBAA457DD4 /* Pods-M4Jam-umbrella.h */,
+				C56E43679F8DEA99DC2D538B1553305D /* Pods-M4Jam.debug.xcconfig */,
+				B32C70CB102E03551B0426B084E64322 /* Pods-M4Jam.release.xcconfig */,
+			);
+			name = "Pods-M4Jam";
+			path = "Target Support Files/Pods-M4Jam";
+			sourceTree = "<group>";
+		};
+		8010A4685BC54EC553E2E313658ED04D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07971CB8BF6FC4FB4D0B6967079FF68D /* NWPusher */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88A494A1D35181C15B43420A75AA8102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53F0192F5BDB95A77E9BB1CFD5284811 /* NWPusher.framework */,
+				921CBA58FEC71B02E514F7081F9D537D /* Pods_M4Jam.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C49DC8AED5463B0F610ED4C13C551E4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DA686B7AAFD2BB4A0E759993E576793 /* Info.plist */,
+				FF725AE420D80751E1A33BEC685D2BDA /* NWPusher.modulemap */,
+				9BFE8E6C12C47CF27D52A6529724D4C8 /* NWPusher.xcconfig */,
+				654E11B1D9417598F9D5CD684425C636 /* NWPusher-dummy.m */,
+				F9FAB3C446C85BA9AECADAB7D2524E5D /* NWPusher-prefix.pch */,
+				C7790E07750872D9596AACFB7B199BA5 /* NWPusher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NWPusher";
+			sourceTree = "<group>";
+		};
+		CBC9D555DA8EB73DA4FD86AAF0051C10 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E06F9155189A4A4AB8149D0AD5F744C /* Pods-M4Jam */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		25AFFC6B17FBC064FFA39930BF4D6A52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DD176BC253BA369CB50E46448611B4 /* NWHub.h in Headers */,
+				3A8BABD02D50AD3F3D20466CC669371F /* NWNotification.h in Headers */,
+				8E36171FD4B97714CDCB04767B986057 /* NWPusher-umbrella.h in Headers */,
+				5F6627E4CD0C040B6C1D7B69FBA862C9 /* NWPusher.h in Headers */,
+				5711CF4FA33A56D49F7689F7254D49C8 /* NWPushFeedback.h in Headers */,
+				45FD148D6603B865A2259C0AB9DF3883 /* NWSecTools.h in Headers */,
+				B33521C962FE3810FD674B61C99CC7A5 /* NWSSLConnection.h in Headers */,
+				0AE0DCD4A3F59255090D2278E4138F7D /* NWType.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DC7B3586651A681DE7803FE74E5BB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EBAFA6F0EDE762C46D112D7BA5F5F94 /* Pods-M4Jam-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		166F858CFFFABC31F5EDBDD337E56C3E /* Pods-M4Jam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC7C2FFEBAF31FB3F7539544B7202A85 /* Build configuration list for PBXNativeTarget "Pods-M4Jam" */;
+			buildPhases = (
+				01A7CCB900319F703442E034D0F942F0 /* Sources */,
+				A1B1FC068F10CD142BB5F087E1B6861B /* Frameworks */,
+				88DC7B3586651A681DE7803FE74E5BB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BA34AEEFC19E99CBD018051954B9B8D /* PBXTargetDependency */,
+			);
+			name = "Pods-M4Jam";
+			productName = "Pods-M4Jam";
+			productReference = 921CBA58FEC71B02E514F7081F9D537D /* Pods_M4Jam.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC9B68D42FD26A60BCEB86272B1E82B2 /* NWPusher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFBE0646C22443DDFD8084D11DD3C54 /* Build configuration list for PBXNativeTarget "NWPusher" */;
+			buildPhases = (
+				6D456212B90EDF81E146C216ACD8C461 /* Sources */,
+				DDE19444A2E2E36EB8187EE539E18EC1 /* Frameworks */,
+				25AFFC6B17FBC064FFA39930BF4D6A52 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NWPusher;
+			productName = NWPusher;
+			productReference = 53F0192F5BDB95A77E9BB1CFD5284811 /* NWPusher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 88A494A1D35181C15B43420A75AA8102 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC9B68D42FD26A60BCEB86272B1E82B2 /* NWPusher */,
+				166F858CFFFABC31F5EDBDD337E56C3E /* Pods-M4Jam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01A7CCB900319F703442E034D0F942F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDED0387FBF99309D7FCF6D4DB2DB9A /* Pods-M4Jam-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D456212B90EDF81E146C216ACD8C461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD86A1C63BC39D22A15C723FAF4E0C5B /* NWHub.m in Sources */,
+				9C6C42E492C61EC310C28094C6CE0708 /* NWNotification.m in Sources */,
+				12E5287F2489EB216AE3CC196F23EFAE /* NWPusher-dummy.m in Sources */,
+				5A83F0FA4B51B5FBB4EB947CD0EDF06B /* NWPusher.m in Sources */,
+				544C83D8BFFAC643201991593C5459FC /* NWPushFeedback.m in Sources */,
+				8AF012E1E6E988950A3C53687AD14DD6 /* NWSecTools.m in Sources */,
+				98D491BF3826DD5A4D5035FFF1A44888 /* NWSSLConnection.m in Sources */,
+				06E91CCB878123F6680D9E5303351353 /* NWType.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BA34AEEFC19E99CBD018051954B9B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NWPusher;
+			target = FC9B68D42FD26A60BCEB86272B1E82B2 /* NWPusher */;
+			targetProxy = AD525E92F1AA650AD37018C93E0CEE2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		200F51F68AC8C990318B78466937AE54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BFE8E6C12C47CF27D52A6529724D4C8 /* NWPusher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NWPusher/NWPusher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NWPusher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NWPusher/NWPusher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NWPusher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA240242BD37C011C8A7C7C589475CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56E43679F8DEA99DC2D538B1553305D /* Pods-M4Jam.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-M4Jam/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-M4Jam/Pods-M4Jam.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_M4Jam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3B7ED183C768C2E883EB297C9D9AFE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BFE8E6C12C47CF27D52A6529724D4C8 /* NWPusher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NWPusher/NWPusher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NWPusher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NWPusher/NWPusher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NWPusher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAFC2261E218455768ACCFE22538240B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32C70CB102E03551B0426B084E64322 /* Pods-M4Jam.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-M4Jam/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-M4Jam/Pods-M4Jam.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_M4Jam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFBE0646C22443DDFD8084D11DD3C54 /* Build configuration list for PBXNativeTarget "NWPusher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200F51F68AC8C990318B78466937AE54 /* Debug */,
+				D3B7ED183C768C2E883EB297C9D9AFE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC7C2FFEBAF31FB3F7539544B7202A85 /* Build configuration list for PBXNativeTarget "Pods-M4Jam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA240242BD37C011C8A7C7C589475CEE /* Debug */,
+				FAFC2261E218455768ACCFE22538240B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_M4Jam {
+  umbrella header "Pods-M4Jam-umbrella.h"
+
+  export *
+  module * { export * }
+}
