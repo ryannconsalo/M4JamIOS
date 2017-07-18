@@ -7,7 +7,8 @@ target 'M4Jam' do
 
   # Pods for M4Jam
 
-  pod 'NWPusher', '~> 0.7.0'
+  pod 'PusherSwift'
+  pod 'Google/CloudMessaging'
 
 
 end

@@ -8,6 +8,9 @@
 
 import UIKit
 import UserNotifications
+import Google/CloudMessaging
+
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -72,12 +75,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let token = tokenParts.joined()
         print("Device Token: \(token)")
+        
+        // Create a config and set a delegate that implements the GGLInstaceIDDelegate protocol.
+        let instanceIDConfig = GGLInstanceIDConfig.default()
+        instanceIDConfig?.delegate = self
+        // Start the GGLInstanceID shared instance with that config and request a registration
+        // token to enable reception of notifications
+        GGLInstanceID.sharedInstance().start(with: instanceIDConfig)
+        registrationOptions = [kGGLInstanceIDRegisterAPNSOption:deviceToken as AnyObject,
+                               kGGLInstanceIDAPNSServerTypeSandboxOption:true as AnyObject]
+        GGLInstanceID.sharedInstance().token(withAuthorizedEntity: gcmSenderID,
+                                             scope: kGGLInstanceIDScopeGCM, options: registrationOptions, handler: registrationHandler)
+        
+        
+        
     }
     
     func application(_ application: UIApplication,
                      didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Failed to register: \(error)")
     }
-
+    
+    
+    
 }
 
