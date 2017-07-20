@@ -59,7 +59,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
     // Put username and password entered into user defaults when message received from JavaScript
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if (message.name == "userLogin") {
-            print ("Launch my stuff")
             
             let dict = message.body as! [String:AnyObject]
             let username = dict["username"] as! String
@@ -214,6 +213,45 @@ class ViewController: UIViewController, CLLocationManagerDelegate, WKUIDelegate,
         let myCoor2D = CLLocationCoordinate2D(latitude: myLat, longitude: myLon)
         
         print("location changed")
+       
+        //Post updated location
+        /*
+        
+        var post = "lat="
+        post += myLat as! String
+        post += "&lon="
+        post += myLon as! String
+        post += "&acc=0"
+        post += "&type=TRACKING_DEVICE"
+        post += "&accuracy=null"
+        
+        print(post)
+        
+        var request = URLRequest(url: URL(string: "https://app.m4jam.com/api/jobber-locations/")!)
+        request.httpMethod = "POST"
+        request.httpBody = post.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            // Print error if error exists
+            guard let data = data, error == nil else {                                                 // check for fundamental networking error
+                print("error=\(error)")
+                return
+            }
+            
+            // Print status code if it is not 200
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)!")
+            }
+            
+            let responseString = String(data: data, encoding: .utf8)
+            print(responseString)
+            
+        }
+        task.resume()
+
+        
+        */
+        
         
         // When location changes, get token from API
         var token = UserDefaults.standard.string(forKey: "token")

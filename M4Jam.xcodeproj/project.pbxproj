@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921EC7471F1FA86E0085D700 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 921EC7461F1FA86E0085D700 /* GoogleService-Info.plist */; };
 		9226918D1F0F7B7B00A45977 /* m4jam.js in Resources */ = {isa = PBXBuildFile; fileRef = 9226918C1F0F7B7B00A45977 /* m4jam.js */; };
 		9226918F1F163FEF00A45977 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9226918E1F163FEF00A45977 /* ConnectionViewController.swift */; };
 		92C1F3CF1F0A2C170023E775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C1F3CE1F0A2C170023E775 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		56A204257018F3E4DCAB2603 /* Pods-M4Jam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M4Jam.release.xcconfig"; path = "Pods/Target Support Files/Pods-M4Jam/Pods-M4Jam.release.xcconfig"; sourceTree = "<group>"; };
 		921EC7451F1E023E0085D700 /* M4Jam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = M4Jam.entitlements; sourceTree = "<group>"; };
+		921EC7461F1FA86E0085D700 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9226918C1F0F7B7B00A45977 /* m4jam.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = m4jam.js; sourceTree = "<group>"; };
 		9226918E1F163FEF00A45977 /* ConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		92C1F3CB1F0A2C170023E775 /* M4Jam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M4Jam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 				92C1F3D21F0A2C170023E775 /* Main.storyboard */,
 				9226918E1F163FEF00A45977 /* ConnectionViewController.swift */,
 				92C1F3D51F0A2C170023E775 /* Assets.xcassets */,
+				921EC7461F1FA86E0085D700 /* GoogleService-Info.plist */,
 				9226918C1F0F7B7B00A45977 /* m4jam.js */,
 				92C1F3D71F0A2C170023E775 /* LaunchScreen.storyboard */,
 				92C1F3DA1F0A2C170023E775 /* Info.plist */,
@@ -175,6 +178,7 @@
 				92C1F3D91F0A2C170023E775 /* LaunchScreen.storyboard in Resources */,
 				92C1F3D61F0A2C170023E775 /* Assets.xcassets in Resources */,
 				92C1F3D41F0A2C170023E775 /* Main.storyboard in Resources */,
+				921EC7471F1FA86E0085D700 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

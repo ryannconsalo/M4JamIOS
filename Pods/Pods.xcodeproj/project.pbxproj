@@ -7,145 +7,257 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06E91CCB878123F6680D9E5303351353 /* NWType.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7DD48484A2DC9D8850BA2B0E2C7B49 /* NWType.m */; };
-		0AE0DCD4A3F59255090D2278E4138F7D /* NWType.h in Headers */ = {isa = PBXBuildFile; fileRef = 919FA9D18DA16A0D15C9BF4C679F6B4E /* NWType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12E5287F2489EB216AE3CC196F23EFAE /* NWPusher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 654E11B1D9417598F9D5CD684425C636 /* NWPusher-dummy.m */; };
-		3A8BABD02D50AD3F3D20466CC669371F /* NWNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A189D20D54E8450E1564240740E830 /* NWNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45FD148D6603B865A2259C0AB9DF3883 /* NWSecTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 81044779F35E8055FBCD2D6DF29FB7CB /* NWSecTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		544C83D8BFFAC643201991593C5459FC /* NWPushFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF689F855F51371A82B42272AEBEFF1 /* NWPushFeedback.m */; };
-		5711CF4FA33A56D49F7689F7254D49C8 /* NWPushFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = F2B1BE7B51F497601F9C08F97E45CCF7 /* NWPushFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A83F0FA4B51B5FBB4EB947CD0EDF06B /* NWPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D8C54C4C78AA4447785FC9E71B90CF /* NWPusher.m */; };
-		5EBAFA6F0EDE762C46D112D7BA5F5F94 /* Pods-M4Jam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 814273C6E9DF65C69EB685CBAA457DD4 /* Pods-M4Jam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F6627E4CD0C040B6C1D7B69FBA862C9 /* NWPusher.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B9FDE0953CADFB3ABFF04E76252A7A /* NWPusher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		761C7D241D45219E5F9718AF4F4CCAF1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */; };
-		8AF012E1E6E988950A3C53687AD14DD6 /* NWSecTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D52E7B38A7E38E68A9F5FDBEDD5F65BF /* NWSecTools.m */; };
-		8E36171FD4B97714CDCB04767B986057 /* NWPusher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7790E07750872D9596AACFB7B199BA5 /* NWPusher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98D491BF3826DD5A4D5035FFF1A44888 /* NWSSLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B3640D0E48C963E938ACA0D2C9E65543 /* NWSSLConnection.m */; };
-		9C6C42E492C61EC310C28094C6CE0708 /* NWNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA619AC42D144A8615C91657871425A /* NWNotification.m */; };
-		AD86A1C63BC39D22A15C723FAF4E0C5B /* NWHub.m in Sources */ = {isa = PBXBuildFile; fileRef = BE72F1CE5A1F9BDB7F9B304D93EED926 /* NWHub.m */; };
-		B33521C962FE3810FD674B61C99CC7A5 /* NWSSLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B1D60E89E5C9DBCEA090E5DEC8E438 /* NWSSLConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4185043205B9AB26F107C6930724709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
-		BDECE3FA0467DD19ED926850E6CAFE3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
-		DDDED0387FBF99309D7FCF6D4DB2DB9A /* Pods-M4Jam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD640EA785339F0776204580E36BCD1 /* Pods-M4Jam-dummy.m */; };
-		E5DD176BC253BA369CB50E46448611B4 /* NWHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D88C1FC8FFA9C704E35CFB38E1B2546 /* NWHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0102E2E0C00F29BB7ACA86E4208268DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0B55EC2563A9B60381D3DACF5093BDFC /* PusherDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38FD0605BCF22AD384CE938E4219111 /* PusherDelegate.swift */; };
+		139AA67E59CB33AAF4506E61AF2F64BC /* Authorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981152403A3BF043208CC1EAF049342B /* Authorizer.swift */; };
+		2D9CB4CE86E302BFC36B3BD48162DE6F /* CryptoSwiftHMACModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6215861D9C99A6F7E635FEDAD214F17F /* CryptoSwiftHMACModule.swift */; };
+		366520FE72B912678F0A3B7DC5BF7887 /* Pods-M4Jam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD640EA785339F0776204580E36BCD1 /* Pods-M4Jam-dummy.m */; };
+		445468514DA186E62DEA44608C9693D7 /* PusherWebsocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50A23BFCCC673DD5370AB9733FA907F /* PusherWebsocketDelegate.swift */; };
+		44E462BE0F9E32A23FFBDBB44589AA3E /* PusherSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18EFAE0976E097FDE66070B0C9C3455 /* PusherSwift.swift */; };
+		4676A5EA3FF3AC4654F4B888C3ABDC63 /* PusherConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84179C26D926106EA840D3F7824B691D /* PusherConnection.swift */; };
+		4B1CD1E08F8DFD35CB089358D091F4CF /* PusherSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 548DFAC77375B09CDCF3AC2C703A7355 /* PusherSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		584B36C48204437B16239C9AFAEEB27E /* PusherGlobalChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C7A127FD738FCA39FB202F6E9EA7D /* PusherGlobalChannel.swift */; };
+		5D8C90499D3FDD1B06A626EB7E452AC0 /* PusherChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BCACBC2ADECEAD13EDB32C38CDCE13 /* PusherChannel.swift */; };
+		659A4FD80602D65E1ABF40E9E00E12D4 /* Starscream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B886123DEB20E3782DC1B900569EE7B /* Starscream.swift */; };
+		97E6AFAE245E083F08F2A5F3472FBA55 /* PusherPresenceChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F3FDC534EF1A54689AFA036436BD94 /* PusherPresenceChannel.swift */; };
+		ADEF69D1662021033AF40E02511E17A2 /* NativePusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ADF106A34B1E34834A042E6E584AC /* NativePusher.swift */; };
+		B0A20F47E131426EA225D27F6B2187CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B265ECBC494AF6F5DD66CFEA1C2F94D5 /* AuthRequestBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B03790D4D5F7C7976020EC7F444E37 /* AuthRequestBuilderProtocol.swift */; };
+		B7E30A5CA1CE59EE33F54314269F87E8 /* PusherChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD494B96EE8F6CB9A95EE79AFB3D11E /* PusherChannels.swift */; };
+		CA8EE5EC7D0127C6E9573058E196F4E3 /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4AAEEF12BDA3BE94D5E7F07E683E2 /* TaskQueue.swift */; };
+		CDED7B09E29EEA08C1E1A45914B367EE /* ObjectiveC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2BB74CD6569E84D2E5CBE9360A446 /* ObjectiveC.swift */; };
+		D2B4F5FEE4CC46CCA5D91E210FFF7A4F /* PusherSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B74C30A35B441BCBDCBD2960DC866E5C /* PusherSwift-dummy.m */; };
+		D68599FC48D923204221198377F8DDFF /* Pods-M4Jam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 814273C6E9DF65C69EB685CBAA457DD4 /* Pods-M4Jam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D830DFE78999736CA24B11D09341206B /* PusherClientOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726E08CB1347633B83D417C20CE11D3E /* PusherClientOptions.swift */; };
+		E7648DB6FACF5979FBBF9247F1940EEE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAB265E6BF5C69A1BDDD7AE608D3367 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AD525E92F1AA650AD37018C93E0CEE2B /* PBXContainerItemProxy */ = {
+		D0124025E448F078F338F88F8B63227F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FC9B68D42FD26A60BCEB86272B1E82B2;
-			remoteInfo = NWPusher;
+			remoteGlobalIDString = 7F611E522EE86C13AB901C6D95E46873;
+			remoteInfo = PusherSwift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0131332F9A355AF3B7148C4692F34CF3 /* GGLInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceID.h; path = Headers/Public/GGLInstanceID.h; sourceTree = "<group>"; };
+		06C53F4CDED52536F61062A6C7EE2040 /* PusherSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PusherSwift.modulemap; sourceTree = "<group>"; };
 		09A10A77ABD4202C116A57098611595D /* Pods-M4Jam-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-M4Jam-resources.sh"; sourceTree = "<group>"; };
-		11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0A528FFE3A2A262D2174AF4D580BD3E0 /* GGLInstanceIDHeaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDHeaders.h; path = Headers/Public/GGLInstanceIDHeaders.h; sourceTree = "<group>"; };
+		0C9237D5294C46E99A28B601C397D7E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1012FC420B2627FE39D98F539F61FA13 /* GGLContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLContext.h; path = Headers/GGLCore/Public/GGLContext.h; sourceTree = "<group>"; };
+		10719E5812FAEC06413DFC90B2829276 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		10F4AAEEF12BDA3BE94D5E7F07E683E2 /* TaskQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskQueue.swift; path = Source/TaskQueue.swift; sourceTree = "<group>"; };
+		1F290D93ECEA66EE860153B767CE1885 /* GGLErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLErrorCode.h; path = Headers/GGLCore/Public/GGLErrorCode.h; sourceTree = "<group>"; };
 		20327BDB4A9097E61EF1CCC047147E73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26897481ADDE8524F6B14DD743F21F44 /* GoogleCloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleCloudMessaging.h; path = Headers/Public/GoogleCloudMessaging.h; sourceTree = "<group>"; };
+		2741674DEC2BA7D8C8CCB92169803565 /* GGLInstanceIDConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDConfig.h; path = Headers/Public/GGLInstanceIDConfig.h; sourceTree = "<group>"; };
 		2C1D2F31DEE6891E3EF5DA735F903A24 /* Pods-M4Jam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-M4Jam.modulemap"; sourceTree = "<group>"; };
-		53F0192F5BDB95A77E9BB1CFD5284811 /* NWPusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NWPusher.framework; path = NWPusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D88C1FC8FFA9C704E35CFB38E1B2546 /* NWHub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWHub.h; path = Classes/NWHub.h; sourceTree = "<group>"; };
-		654E11B1D9417598F9D5CD684425C636 /* NWPusher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NWPusher-dummy.m"; sourceTree = "<group>"; };
-		6DA686B7AAFD2BB4A0E759993E576793 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81044779F35E8055FBCD2D6DF29FB7CB /* NWSecTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWSecTools.h; path = Classes/NWSecTools.h; sourceTree = "<group>"; };
+		38E98DB4B675BF32C35A2E3153A960DE /* AppInvite-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AppInvite-Module.h"; path = "Headers/ModuleHeaders/AppInvite-Module.h"; sourceTree = "<group>"; };
+		3CE47D2F4D7B42F9709C6BF8C64AFB2C /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		40EBC82323776BA9F139EFBC733B082F /* Core-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Core-Module.h"; path = "Headers/ModuleHeaders/Core-Module.h"; sourceTree = "<group>"; };
+		4203372BF7C07030EF42212F59D60BB7 /* libGGLCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
+		4A650089327E107BE2719F91711D6F8F /* CloudMessaging-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CloudMessaging-Module.h"; path = "Headers/ModuleHeaders/CloudMessaging-Module.h"; sourceTree = "<group>"; };
+		4B4CFB170F707734CEEB4C46B691998B /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Headers/GGLCore/Public/Core.h; sourceTree = "<group>"; };
+		52C4CDCACBFBFEA81B01A92AE0104ABF /* GCMPubSub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMPubSub.h; path = Headers/Public/GCMPubSub.h; sourceTree = "<group>"; };
+		543C7A127FD738FCA39FB202F6E9EA7D /* PusherGlobalChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherGlobalChannel.swift; path = Source/PusherGlobalChannel.swift; sourceTree = "<group>"; };
+		548DFAC77375B09CDCF3AC2C703A7355 /* PusherSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PusherSwift-umbrella.h"; sourceTree = "<group>"; };
+		58F3FDC534EF1A54689AFA036436BD94 /* PusherPresenceChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherPresenceChannel.swift; path = Source/PusherPresenceChannel.swift; sourceTree = "<group>"; };
+		605F413761212FA745343BC0C316D219 /* libGGLCloudMessaging.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCloudMessaging.a; path = Libraries/libGGLCloudMessaging.a; sourceTree = "<group>"; };
+		6215861D9C99A6F7E635FEDAD214F17F /* CryptoSwiftHMACModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoSwiftHMACModule.swift; path = Source/CryptoSwiftHMACModule.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6D2FFAFA6D12047E4F57D5CA9857F83C /* GCMService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMService.h; path = Headers/Public/GCMService.h; sourceTree = "<group>"; };
+		710ADF106A34B1E34834A042E6E584AC /* NativePusher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativePusher.swift; path = Source/NativePusher.swift; sourceTree = "<group>"; };
+		726E08CB1347633B83D417C20CE11D3E /* PusherClientOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherClientOptions.swift; path = Source/PusherClientOptions.swift; sourceTree = "<group>"; };
+		76A28B2D4F45658455E006664158BAEA /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		78CA8E53D065991FAAA86772959EA8AF /* GGLConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLConfiguration.h; path = Headers/GGLCore/Public/GGLConfiguration.h; sourceTree = "<group>"; };
 		814273C6E9DF65C69EB685CBAA457DD4 /* Pods-M4Jam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-M4Jam-umbrella.h"; sourceTree = "<group>"; };
+		84179C26D926106EA840D3F7824B691D /* PusherConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherConnection.swift; path = Source/PusherConnection.swift; sourceTree = "<group>"; };
 		8AD640EA785339F0776204580E36BCD1 /* Pods-M4Jam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-M4Jam-dummy.m"; sourceTree = "<group>"; };
-		919FA9D18DA16A0D15C9BF4C679F6B4E /* NWType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWType.h; path = Classes/NWType.h; sourceTree = "<group>"; };
-		921CBA58FEC71B02E514F7081F9D537D /* Pods_M4Jam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_M4Jam.framework; path = "Pods-M4Jam.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF57996315F583BBDF396595C6B1CF0 /* PusherSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PusherSwift.framework; path = PusherSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1379CDE9C0466B332EA5F25CEFDF44 /* AdMob-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AdMob-Module.h"; path = "Headers/ModuleHeaders/AdMob-Module.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99A189D20D54E8450E1564240740E830 /* NWNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWNotification.h; path = Classes/NWNotification.h; sourceTree = "<group>"; };
-		9BFE8E6C12C47CF27D52A6529724D4C8 /* NWPusher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NWPusher.xcconfig; sourceTree = "<group>"; };
-		9EA619AC42D144A8615C91657871425A /* NWNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWNotification.m; path = Classes/NWNotification.m; sourceTree = "<group>"; };
-		A8B9FDE0953CADFB3ABFF04E76252A7A /* NWPusher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWPusher.h; path = Classes/NWPusher.h; sourceTree = "<group>"; };
+		981152403A3BF043208CC1EAF049342B /* Authorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorizer.swift; path = Source/Authorizer.swift; sourceTree = "<group>"; };
+		9B886123DEB20E3782DC1B900569EE7B /* Starscream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Starscream.swift; path = Source/Starscream.swift; sourceTree = "<group>"; };
+		9E2EC488034B60563B559EC41744CE20 /* GCMConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMConfig.h; path = Headers/Public/GCMConfig.h; sourceTree = "<group>"; };
+		9FF2BB74CD6569E84D2E5CBE9360A446 /* ObjectiveC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectiveC.swift; path = Source/ObjectiveC.swift; sourceTree = "<group>"; };
+		A1E52CA96EEBFA7D6828BB7758850C65 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		A50A23BFCCC673DD5370AB9733FA907F /* PusherWebsocketDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherWebsocketDelegate.swift; path = Source/PusherWebsocketDelegate.swift; sourceTree = "<group>"; };
+		A587FD68728AA377E4675D012E18F65C /* GGLContext+CloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGLContext+CloudMessaging.h"; path = "Headers/GGLCloudMessaging/Public/GGLContext+CloudMessaging.h"; sourceTree = "<group>"; };
+		A8916FE8F75FB21A25664057E4630BC2 /* GMRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMRConfiguration.h; path = Headers/GGLCore/Public/GMRConfiguration.h; sourceTree = "<group>"; };
+		A8C1C7570EC56F9D4E90E0AB2811216D /* PusherSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PusherSwift.xcconfig; sourceTree = "<group>"; };
+		AAD494B96EE8F6CB9A95EE79AFB3D11E /* PusherChannels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherChannels.swift; path = Source/PusherChannels.swift; sourceTree = "<group>"; };
+		ADAB265E6BF5C69A1BDDD7AE608D3367 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Source/Reachability.swift; sourceTree = "<group>"; };
+		B162C30E3DB18A6C31B99EFA0AF2D74C /* libGGLInstanceIDLib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLInstanceIDLib.a; path = Libraries/libGGLInstanceIDLib.a; sourceTree = "<group>"; };
 		B32C70CB102E03551B0426B084E64322 /* Pods-M4Jam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-M4Jam.release.xcconfig"; sourceTree = "<group>"; };
-		B3640D0E48C963E938ACA0D2C9E65543 /* NWSSLConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWSSLConnection.m; path = Classes/NWSSLConnection.m; sourceTree = "<group>"; };
+		B4BCACBC2ADECEAD13EDB32C38CDCE13 /* PusherChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherChannel.swift; path = Source/PusherChannel.swift; sourceTree = "<group>"; };
+		B5AF60CD3B01482AA98276E65BA06D3B /* CloudMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CloudMessaging.h; path = Headers/GGLCloudMessaging/Public/CloudMessaging.h; sourceTree = "<group>"; };
 		B64C170189AF25B8D0C3C34409F36284 /* Pods-M4Jam-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-M4Jam-frameworks.sh"; sourceTree = "<group>"; };
+		B74C30A35B441BCBDCBD2960DC866E5C /* PusherSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PusherSwift-dummy.m"; sourceTree = "<group>"; };
 		BE2F5A5542E16612ECEE00F546820AE7 /* Pods-M4Jam-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-M4Jam-acknowledgements.plist"; sourceTree = "<group>"; };
-		BE72F1CE5A1F9BDB7F9B304D93EED926 /* NWHub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWHub.m; path = Classes/NWHub.m; sourceTree = "<group>"; };
-		C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		C56E43679F8DEA99DC2D538B1553305D /* Pods-M4Jam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-M4Jam.debug.xcconfig"; sourceTree = "<group>"; };
-		C7790E07750872D9596AACFB7B199BA5 /* NWPusher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NWPusher-umbrella.h"; sourceTree = "<group>"; };
-		D4B1D60E89E5C9DBCEA090E5DEC8E438 /* NWSSLConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWSSLConnection.h; path = Classes/NWSSLConnection.h; sourceTree = "<group>"; };
-		D52E7B38A7E38E68A9F5FDBEDD5F65BF /* NWSecTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWSecTools.m; path = Classes/NWSecTools.m; sourceTree = "<group>"; };
-		DEF689F855F51371A82B42272AEBEFF1 /* NWPushFeedback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWPushFeedback.m; path = Classes/NWPushFeedback.m; sourceTree = "<group>"; };
-		E5D8C54C4C78AA4447785FC9E71B90CF /* NWPusher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWPusher.m; path = Classes/NWPusher.m; sourceTree = "<group>"; };
-		F2B1BE7B51F497601F9C08F97E45CCF7 /* NWPushFeedback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NWPushFeedback.h; path = Classes/NWPushFeedback.h; sourceTree = "<group>"; };
+		CA48554CED8A17D1EF7EDB7DE3B2A9E8 /* SignIn-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SignIn-Module.h"; path = "Headers/ModuleHeaders/SignIn-Module.h"; sourceTree = "<group>"; };
+		CD8D158BC3D998BA381A593ECE823B8F /* libGcmLib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGcmLib.a; path = Libraries/libGcmLib.a; sourceTree = "<group>"; };
+		DC802AF01E79F5D0A4391FE3BEDEA6B1 /* PusherSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PusherSwift-prefix.pch"; sourceTree = "<group>"; };
+		E18EFAE0976E097FDE66070B0C9C3455 /* PusherSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherSwift.swift; path = Source/PusherSwift.swift; sourceTree = "<group>"; };
+		E2B03790D4D5F7C7976020EC7F444E37 /* AuthRequestBuilderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthRequestBuilderProtocol.swift; path = Source/AuthRequestBuilderProtocol.swift; sourceTree = "<group>"; };
+		F1A6B9220F4E1E3C2CC8460022367F1C /* GGLInstanceIDDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLInstanceIDDelegate.h; path = Headers/Public/GGLInstanceIDDelegate.h; sourceTree = "<group>"; };
+		F38FD0605BCF22AD384CE938E4219111 /* PusherDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherDelegate.swift; path = Source/PusherDelegate.swift; sourceTree = "<group>"; };
+		F5E606AAA1FF5ADA555A6B8D3966B430 /* Analytics-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Analytics-Module.h"; path = "Headers/ModuleHeaders/Analytics-Module.h"; sourceTree = "<group>"; };
+		F70CAC03CA845A024B0CC80619327585 /* GCMReceiverDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCMReceiverDelegate.h; path = Headers/Public/GCMReceiverDelegate.h; sourceTree = "<group>"; };
 		F710027A73057ED9F08D305D179DF03D /* Pods-M4Jam-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-M4Jam-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F9FAB3C446C85BA9AECADAB7D2524E5D /* NWPusher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NWPusher-prefix.pch"; sourceTree = "<group>"; };
-		FD7DD48484A2DC9D8850BA2B0E2C7B49 /* NWType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NWType.m; path = Classes/NWType.m; sourceTree = "<group>"; };
-		FF725AE420D80751E1A33BEC685D2BDA /* NWPusher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NWPusher.modulemap; sourceTree = "<group>"; };
+		F78A811AF3B52E958F89A00228FDC511 /* Pods_M4Jam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_M4Jam.framework; path = "Pods-M4Jam.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9306C69D8AE6BF4088C639E518AEBF7 /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleIPhoneUtilities.framework; path = Frameworks/GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A1B1FC068F10CD142BB5F087E1B6861B /* Frameworks */ = {
+		213990EDDD5EFC7B5359F7065D2A6C71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDECE3FA0467DD19ED926850E6CAFE3E /* Foundation.framework in Frameworks */,
+				0102E2E0C00F29BB7ACA86E4208268DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDE19444A2E2E36EB8187EE539E18EC1 /* Frameworks */ = {
+		DE400E2AFF543993F9A97F03EE8A5899 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4185043205B9AB26F107C6930724709 /* Foundation.framework in Frameworks */,
-				761C7D241D45219E5F9718AF4F4CCAF1 /* Security.framework in Frameworks */,
+				B0A20F47E131426EA225D27F6B2187CD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07971CB8BF6FC4FB4D0B6967079FF68D /* NWPusher */ = {
+		072AA6427F6C590DC1CDAB510F23446C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D88C1FC8FFA9C704E35CFB38E1B2546 /* NWHub.h */,
-				BE72F1CE5A1F9BDB7F9B304D93EED926 /* NWHub.m */,
-				99A189D20D54E8450E1564240740E830 /* NWNotification.h */,
-				9EA619AC42D144A8615C91657871425A /* NWNotification.m */,
-				A8B9FDE0953CADFB3ABFF04E76252A7A /* NWPusher.h */,
-				E5D8C54C4C78AA4447785FC9E71B90CF /* NWPusher.m */,
-				F2B1BE7B51F497601F9C08F97E45CCF7 /* NWPushFeedback.h */,
-				DEF689F855F51371A82B42272AEBEFF1 /* NWPushFeedback.m */,
-				81044779F35E8055FBCD2D6DF29FB7CB /* NWSecTools.h */,
-				D52E7B38A7E38E68A9F5FDBEDD5F65BF /* NWSecTools.m */,
-				D4B1D60E89E5C9DBCEA090E5DEC8E438 /* NWSSLConnection.h */,
-				B3640D0E48C963E938ACA0D2C9E65543 /* NWSSLConnection.m */,
-				919FA9D18DA16A0D15C9BF4C679F6B4E /* NWType.h */,
-				FD7DD48484A2DC9D8850BA2B0E2C7B49 /* NWType.m */,
-				8C49DC8AED5463B0F610ED4C13C551E4 /* Support Files */,
-			);
-			name = NWPusher;
-			path = NWPusher;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4F990579C2E52276FD3C28227B49D60B /* iOS */,
+				10719E5812FAEC06413DFC90B2829276 /* GoogleUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4F990579C2E52276FD3C28227B49D60B /* iOS */ = {
+		0864CF4DED2395CF3ABDEFF3457C5BC9 /* Google */ = {
 			isa = PBXGroup;
 			children = (
-				11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */,
-				C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */,
+				0F3467F3350BE7A6604362DAB5B44481 /* CloudMessaging */,
+				81B33A0B8850EFC9C5B9E41421EAF152 /* Core */,
 			);
-			name = iOS;
+			name = Google;
+			path = Google;
+			sourceTree = "<group>";
+		};
+		0F3467F3350BE7A6604362DAB5B44481 /* CloudMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF60CD3B01482AA98276E65BA06D3B /* CloudMessaging.h */,
+				A587FD68728AA377E4675D012E18F65C /* GGLContext+CloudMessaging.h */,
+				8CA82435E8496C6293CEE9F0BC0A6C91 /* Frameworks */,
+			);
+			name = CloudMessaging;
+			sourceTree = "<group>";
+		};
+		2D0EDFCCA55306616913B4ED09CC7E40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1E52CA96EEBFA7D6828BB7758850C65 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3246FD8A79926044DA4F04EB714F1D65 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				072AA6427F6C590DC1CDAB510F23446C /* Frameworks */,
+			);
+			name = GoogleUtilities;
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		36E1E20B196994067F040C9CE169B54D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4203372BF7C07030EF42212F59D60BB7 /* libGGLCore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D45530FC599EBCC19BA49008184A6C4 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				2D0EDFCCA55306616913B4ED09CC7E40 /* Frameworks */,
+			);
+			name = GoogleInterchangeUtilities;
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		3E3B01954F5576411F63D0E204AC4643 /* GoogleCloudMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				9E2EC488034B60563B559EC41744CE20 /* GCMConfig.h */,
+				52C4CDCACBFBFEA81B01A92AE0104ABF /* GCMPubSub.h */,
+				F70CAC03CA845A024B0CC80619327585 /* GCMReceiverDelegate.h */,
+				6D2FFAFA6D12047E4F57D5CA9857F83C /* GCMService.h */,
+				26897481ADDE8524F6B14DD743F21F44 /* GoogleCloudMessaging.h */,
+				F39AE67D9F66A3F4358B55A6B509B1F5 /* Frameworks */,
+			);
+			name = GoogleCloudMessaging;
+			path = GoogleCloudMessaging;
+			sourceTree = "<group>";
+		};
+		4CF8BC4A5BDCD6A5707B130DA7B19A5B /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				B83D3FB81A387585D23F0CF8A7A39305 /* Frameworks */,
+			);
+			name = GoogleNetworkingUtilities;
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		5C43DCC97BDC76AF850346F655FF76ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9306C69D8AE6BF4088C639E518AEBF7 /* GoogleIPhoneUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66E84954D6270F20650CE9EFF7F17025 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				66EF19718A55ABABEBD1336193C0A97D /* Frameworks */,
+			);
+			name = GoogleSymbolUtilities;
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		66EF19718A55ABABEBD1336193C0A97D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CE47D2F4D7B42F9709C6BF8C64AFB2C /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68EC3CA2563E6F0D6B1A8619C9EC0871 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B162C30E3DB18A6C31B99EFA0AF2D74C /* libGGLInstanceIDLib.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				8010A4685BC54EC553E2E313658ED04D /* Pods */,
-				88A494A1D35181C15B43420A75AA8102 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9710DD6C134515615331C1A77206A144 /* Pods */,
+				DBDA82F95979FB484237A58A91960322 /* Products */,
 				CBC9D555DA8EB73DA4FD86AAF0051C10 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -168,35 +280,99 @@
 			path = "Target Support Files/Pods-M4Jam";
 			sourceTree = "<group>";
 		};
-		8010A4685BC54EC553E2E313658ED04D /* Pods */ = {
+		81B33A0B8850EFC9C5B9E41421EAF152 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				07971CB8BF6FC4FB4D0B6967079FF68D /* NWPusher */,
+				8E1379CDE9C0466B332EA5F25CEFDF44 /* AdMob-Module.h */,
+				F5E606AAA1FF5ADA555A6B8D3966B430 /* Analytics-Module.h */,
+				38E98DB4B675BF32C35A2E3153A960DE /* AppInvite-Module.h */,
+				4A650089327E107BE2719F91711D6F8F /* CloudMessaging-Module.h */,
+				4B4CFB170F707734CEEB4C46B691998B /* Core.h */,
+				40EBC82323776BA9F139EFBC733B082F /* Core-Module.h */,
+				78CA8E53D065991FAAA86772959EA8AF /* GGLConfiguration.h */,
+				1012FC420B2627FE39D98F539F61FA13 /* GGLContext.h */,
+				1F290D93ECEA66EE860153B767CE1885 /* GGLErrorCode.h */,
+				A8916FE8F75FB21A25664057E4630BC2 /* GMRConfiguration.h */,
+				CA48554CED8A17D1EF7EDB7DE3B2A9E8 /* SignIn-Module.h */,
+				36E1E20B196994067F040C9CE169B54D /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		8CA82435E8496C6293CEE9F0BC0A6C91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				605F413761212FA745343BC0C316D219 /* libGGLCloudMessaging.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9407536082A205509CDDEBF29B0F0763 /* GoogleIPhoneUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5C43DCC97BDC76AF850346F655FF76ED /* Frameworks */,
+			);
+			name = GoogleIPhoneUtilities;
+			path = GoogleIPhoneUtilities;
+			sourceTree = "<group>";
+		};
+		9710DD6C134515615331C1A77206A144 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4868BBCB32B52D506F2A02A9B121897 /* GGLInstanceID */,
+				0864CF4DED2395CF3ABDEFF3457C5BC9 /* Google */,
+				3E3B01954F5576411F63D0E204AC4643 /* GoogleCloudMessaging */,
+				3D45530FC599EBCC19BA49008184A6C4 /* GoogleInterchangeUtilities */,
+				9407536082A205509CDDEBF29B0F0763 /* GoogleIPhoneUtilities */,
+				4CF8BC4A5BDCD6A5707B130DA7B19A5B /* GoogleNetworkingUtilities */,
+				66E84954D6270F20650CE9EFF7F17025 /* GoogleSymbolUtilities */,
+				3246FD8A79926044DA4F04EB714F1D65 /* GoogleUtilities */,
+				CF0DD33C007B3B14FA5A93C7D3BD5E34 /* PusherSwift */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		88A494A1D35181C15B43420A75AA8102 /* Products */ = {
+		9A1E1D7572F15B7C301C456F9F93A03B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				53F0192F5BDB95A77E9BB1CFD5284811 /* NWPusher.framework */,
-				921CBA58FEC71B02E514F7081F9D537D /* Pods_M4Jam.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8C49DC8AED5463B0F610ED4C13C551E4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6DA686B7AAFD2BB4A0E759993E576793 /* Info.plist */,
-				FF725AE420D80751E1A33BEC685D2BDA /* NWPusher.modulemap */,
-				9BFE8E6C12C47CF27D52A6529724D4C8 /* NWPusher.xcconfig */,
-				654E11B1D9417598F9D5CD684425C636 /* NWPusher-dummy.m */,
-				F9FAB3C446C85BA9AECADAB7D2524E5D /* NWPusher-prefix.pch */,
-				C7790E07750872D9596AACFB7B199BA5 /* NWPusher-umbrella.h */,
+				0C9237D5294C46E99A28B601C397D7E3 /* Info.plist */,
+				06C53F4CDED52536F61062A6C7EE2040 /* PusherSwift.modulemap */,
+				A8C1C7570EC56F9D4E90E0AB2811216D /* PusherSwift.xcconfig */,
+				B74C30A35B441BCBDCBD2960DC866E5C /* PusherSwift-dummy.m */,
+				DC802AF01E79F5D0A4391FE3BEDEA6B1 /* PusherSwift-prefix.pch */,
+				548DFAC77375B09CDCF3AC2C703A7355 /* PusherSwift-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/NWPusher";
+			path = "../Target Support Files/PusherSwift";
+			sourceTree = "<group>";
+		};
+		B4868BBCB32B52D506F2A02A9B121897 /* GGLInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				0131332F9A355AF3B7148C4692F34CF3 /* GGLInstanceID.h */,
+				2741674DEC2BA7D8C8CCB92169803565 /* GGLInstanceIDConfig.h */,
+				F1A6B9220F4E1E3C2CC8460022367F1C /* GGLInstanceIDDelegate.h */,
+				0A528FFE3A2A262D2174AF4D580BD3E0 /* GGLInstanceIDHeaders.h */,
+				68EC3CA2563E6F0D6B1A8619C9EC0871 /* Frameworks */,
+			);
+			name = GGLInstanceID;
+			path = GGLInstanceID;
+			sourceTree = "<group>";
+		};
+		B83D3FB81A387585D23F0CF8A7A39305 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76A28B2D4F45658455E006664158BAEA /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CBC9D555DA8EB73DA4FD86AAF0051C10 /* Targets Support Files */ = {
@@ -207,68 +383,112 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		CF0DD33C007B3B14FA5A93C7D3BD5E34 /* PusherSwift */ = {
+			isa = PBXGroup;
+			children = (
+				981152403A3BF043208CC1EAF049342B /* Authorizer.swift */,
+				E2B03790D4D5F7C7976020EC7F444E37 /* AuthRequestBuilderProtocol.swift */,
+				6215861D9C99A6F7E635FEDAD214F17F /* CryptoSwiftHMACModule.swift */,
+				710ADF106A34B1E34834A042E6E584AC /* NativePusher.swift */,
+				9FF2BB74CD6569E84D2E5CBE9360A446 /* ObjectiveC.swift */,
+				B4BCACBC2ADECEAD13EDB32C38CDCE13 /* PusherChannel.swift */,
+				AAD494B96EE8F6CB9A95EE79AFB3D11E /* PusherChannels.swift */,
+				726E08CB1347633B83D417C20CE11D3E /* PusherClientOptions.swift */,
+				84179C26D926106EA840D3F7824B691D /* PusherConnection.swift */,
+				F38FD0605BCF22AD384CE938E4219111 /* PusherDelegate.swift */,
+				543C7A127FD738FCA39FB202F6E9EA7D /* PusherGlobalChannel.swift */,
+				58F3FDC534EF1A54689AFA036436BD94 /* PusherPresenceChannel.swift */,
+				E18EFAE0976E097FDE66070B0C9C3455 /* PusherSwift.swift */,
+				A50A23BFCCC673DD5370AB9733FA907F /* PusherWebsocketDelegate.swift */,
+				ADAB265E6BF5C69A1BDDD7AE608D3367 /* Reachability.swift */,
+				9B886123DEB20E3782DC1B900569EE7B /* Starscream.swift */,
+				10F4AAEEF12BDA3BE94D5E7F07E683E2 /* TaskQueue.swift */,
+				9A1E1D7572F15B7C301C456F9F93A03B /* Support Files */,
+			);
+			name = PusherSwift;
+			path = PusherSwift;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DBDA82F95979FB484237A58A91960322 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F78A811AF3B52E958F89A00228FDC511 /* Pods_M4Jam.framework */,
+				8AF57996315F583BBDF396595C6B1CF0 /* PusherSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F39AE67D9F66A3F4358B55A6B509B1F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D158BC3D998BA381A593ECE823B8F /* libGcmLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		25AFFC6B17FBC064FFA39930BF4D6A52 /* Headers */ = {
+		22BA132A55075F20C728C35B09B4A020 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5DD176BC253BA369CB50E46448611B4 /* NWHub.h in Headers */,
-				3A8BABD02D50AD3F3D20466CC669371F /* NWNotification.h in Headers */,
-				8E36171FD4B97714CDCB04767B986057 /* NWPusher-umbrella.h in Headers */,
-				5F6627E4CD0C040B6C1D7B69FBA862C9 /* NWPusher.h in Headers */,
-				5711CF4FA33A56D49F7689F7254D49C8 /* NWPushFeedback.h in Headers */,
-				45FD148D6603B865A2259C0AB9DF3883 /* NWSecTools.h in Headers */,
-				B33521C962FE3810FD674B61C99CC7A5 /* NWSSLConnection.h in Headers */,
-				0AE0DCD4A3F59255090D2278E4138F7D /* NWType.h in Headers */,
+				4B1CD1E08F8DFD35CB089358D091F4CF /* PusherSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88DC7B3586651A681DE7803FE74E5BB2 /* Headers */ = {
+		95A59D4044DC17F06996212A1367FACD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EBAFA6F0EDE762C46D112D7BA5F5F94 /* Pods-M4Jam-umbrella.h in Headers */,
+				D68599FC48D923204221198377F8DDFF /* Pods-M4Jam-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		166F858CFFFABC31F5EDBDD337E56C3E /* Pods-M4Jam */ = {
+		620363A9B3130ACB95CB1E1438FC97B6 /* Pods-M4Jam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC7C2FFEBAF31FB3F7539544B7202A85 /* Build configuration list for PBXNativeTarget "Pods-M4Jam" */;
+			buildConfigurationList = 81297BF8711C111CC162289070DD0B98 /* Build configuration list for PBXNativeTarget "Pods-M4Jam" */;
 			buildPhases = (
-				01A7CCB900319F703442E034D0F942F0 /* Sources */,
-				A1B1FC068F10CD142BB5F087E1B6861B /* Frameworks */,
-				88DC7B3586651A681DE7803FE74E5BB2 /* Headers */,
+				66E60010FCF6C5C05A4849BB62CF1CEF /* Sources */,
+				213990EDDD5EFC7B5359F7065D2A6C71 /* Frameworks */,
+				95A59D4044DC17F06996212A1367FACD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1BA34AEEFC19E99CBD018051954B9B8D /* PBXTargetDependency */,
+				06DA2C4FA6DD70FCAC65790E77FECD9D /* PBXTargetDependency */,
 			);
 			name = "Pods-M4Jam";
 			productName = "Pods-M4Jam";
-			productReference = 921CBA58FEC71B02E514F7081F9D537D /* Pods_M4Jam.framework */;
+			productReference = F78A811AF3B52E958F89A00228FDC511 /* Pods_M4Jam.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FC9B68D42FD26A60BCEB86272B1E82B2 /* NWPusher */ = {
+		7F611E522EE86C13AB901C6D95E46873 /* PusherSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFFBE0646C22443DDFD8084D11DD3C54 /* Build configuration list for PBXNativeTarget "NWPusher" */;
+			buildConfigurationList = 6E9C693FE37211C1DB9F42D51C261BA3 /* Build configuration list for PBXNativeTarget "PusherSwift" */;
 			buildPhases = (
-				6D456212B90EDF81E146C216ACD8C461 /* Sources */,
-				DDE19444A2E2E36EB8187EE539E18EC1 /* Frameworks */,
-				25AFFC6B17FBC064FFA39930BF4D6A52 /* Headers */,
+				CA429A73677494317A0100D48360FEA5 /* Sources */,
+				DE400E2AFF543993F9A97F03EE8A5899 /* Frameworks */,
+				22BA132A55075F20C728C35B09B4A020 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NWPusher;
-			productName = NWPusher;
-			productReference = 53F0192F5BDB95A77E9BB1CFD5284811 /* NWPusher.framework */;
+			name = PusherSwift;
+			productName = PusherSwift;
+			productReference = 8AF57996315F583BBDF396595C6B1CF0 /* PusherSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -288,48 +508,58 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 88A494A1D35181C15B43420A75AA8102 /* Products */;
+			productRefGroup = DBDA82F95979FB484237A58A91960322 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC9B68D42FD26A60BCEB86272B1E82B2 /* NWPusher */,
-				166F858CFFFABC31F5EDBDD337E56C3E /* Pods-M4Jam */,
+				620363A9B3130ACB95CB1E1438FC97B6 /* Pods-M4Jam */,
+				7F611E522EE86C13AB901C6D95E46873 /* PusherSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		01A7CCB900319F703442E034D0F942F0 /* Sources */ = {
+		66E60010FCF6C5C05A4849BB62CF1CEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDDED0387FBF99309D7FCF6D4DB2DB9A /* Pods-M4Jam-dummy.m in Sources */,
+				366520FE72B912678F0A3B7DC5BF7887 /* Pods-M4Jam-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D456212B90EDF81E146C216ACD8C461 /* Sources */ = {
+		CA429A73677494317A0100D48360FEA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD86A1C63BC39D22A15C723FAF4E0C5B /* NWHub.m in Sources */,
-				9C6C42E492C61EC310C28094C6CE0708 /* NWNotification.m in Sources */,
-				12E5287F2489EB216AE3CC196F23EFAE /* NWPusher-dummy.m in Sources */,
-				5A83F0FA4B51B5FBB4EB947CD0EDF06B /* NWPusher.m in Sources */,
-				544C83D8BFFAC643201991593C5459FC /* NWPushFeedback.m in Sources */,
-				8AF012E1E6E988950A3C53687AD14DD6 /* NWSecTools.m in Sources */,
-				98D491BF3826DD5A4D5035FFF1A44888 /* NWSSLConnection.m in Sources */,
-				06E91CCB878123F6680D9E5303351353 /* NWType.m in Sources */,
+				139AA67E59CB33AAF4506E61AF2F64BC /* Authorizer.swift in Sources */,
+				B265ECBC494AF6F5DD66CFEA1C2F94D5 /* AuthRequestBuilderProtocol.swift in Sources */,
+				2D9CB4CE86E302BFC36B3BD48162DE6F /* CryptoSwiftHMACModule.swift in Sources */,
+				ADEF69D1662021033AF40E02511E17A2 /* NativePusher.swift in Sources */,
+				CDED7B09E29EEA08C1E1A45914B367EE /* ObjectiveC.swift in Sources */,
+				5D8C90499D3FDD1B06A626EB7E452AC0 /* PusherChannel.swift in Sources */,
+				B7E30A5CA1CE59EE33F54314269F87E8 /* PusherChannels.swift in Sources */,
+				D830DFE78999736CA24B11D09341206B /* PusherClientOptions.swift in Sources */,
+				4676A5EA3FF3AC4654F4B888C3ABDC63 /* PusherConnection.swift in Sources */,
+				0B55EC2563A9B60381D3DACF5093BDFC /* PusherDelegate.swift in Sources */,
+				584B36C48204437B16239C9AFAEEB27E /* PusherGlobalChannel.swift in Sources */,
+				97E6AFAE245E083F08F2A5F3472FBA55 /* PusherPresenceChannel.swift in Sources */,
+				D2B4F5FEE4CC46CCA5D91E210FFF7A4F /* PusherSwift-dummy.m in Sources */,
+				44E462BE0F9E32A23FFBDBB44589AA3E /* PusherSwift.swift in Sources */,
+				445468514DA186E62DEA44608C9693D7 /* PusherWebsocketDelegate.swift in Sources */,
+				E7648DB6FACF5979FBBF9247F1940EEE /* Reachability.swift in Sources */,
+				659A4FD80602D65E1ABF40E9E00E12D4 /* Starscream.swift in Sources */,
+				CA8EE5EC7D0127C6E9573058E196F4E3 /* TaskQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1BA34AEEFC19E99CBD018051954B9B8D /* PBXTargetDependency */ = {
+		06DA2C4FA6DD70FCAC65790E77FECD9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = NWPusher;
-			target = FC9B68D42FD26A60BCEB86272B1E82B2 /* NWPusher */;
-			targetProxy = AD525E92F1AA650AD37018C93E0CEE2B /* PBXContainerItemProxy */;
+			name = PusherSwift;
+			target = 7F611E522EE86C13AB901C6D95E46873 /* PusherSwift */;
+			targetProxy = D0124025E448F078F338F88F8B63227F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -382,39 +612,6 @@
 			};
 			name = Debug;
 		};
-		200F51F68AC8C990318B78466937AE54 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BFE8E6C12C47CF27D52A6529724D4C8 /* NWPusher.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NWPusher/NWPusher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NWPusher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NWPusher/NWPusher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = NWPusher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		707B86CFB21B645E37109F39754D4051 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -459,7 +656,41 @@
 			};
 			name = Release;
 		};
-		BA240242BD37C011C8A7C7C589475CEE /* Debug */ = {
+		74CB3999E8F3E1BDC6E6B5D3144CACBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C1C7570EC56F9D4E90E0AB2811216D /* PusherSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PusherSwift/PusherSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PusherSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PusherSwift/PusherSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PusherSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8DF518C1A73200823C2AED2CAD1288A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C56E43679F8DEA99DC2D538B1553305D /* Pods-M4Jam.debug.xcconfig */;
 			buildSettings = {
@@ -489,46 +720,51 @@
 				PRODUCT_NAME = Pods_M4Jam;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D3B7ED183C768C2E883EB297C9D9AFE8 /* Release */ = {
+		F09AEC9CDC340FE310F4B208A9FBDE0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BFE8E6C12C47CF27D52A6529724D4C8 /* NWPusher.xcconfig */;
+			baseConfigurationReference = A8C1C7570EC56F9D4E90E0AB2811216D /* PusherSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NWPusher/NWPusher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NWPusher/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PusherSwift/PusherSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PusherSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NWPusher/NWPusher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = NWPusher;
+				MODULEMAP_FILE = "Target Support Files/PusherSwift/PusherSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PusherSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		FAFC2261E218455768ACCFE22538240B /* Release */ = {
+		F95A7386B08B288C2B5169F20F81ED07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B32C70CB102E03551B0426B084E64322 /* Pods-M4Jam.release.xcconfig */;
 			buildSettings = {
@@ -558,6 +794,8 @@
 				PRODUCT_NAME = Pods_M4Jam;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -576,20 +814,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFFBE0646C22443DDFD8084D11DD3C54 /* Build configuration list for PBXNativeTarget "NWPusher" */ = {
+		6E9C693FE37211C1DB9F42D51C261BA3 /* Build configuration list for PBXNativeTarget "PusherSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				200F51F68AC8C990318B78466937AE54 /* Debug */,
-				D3B7ED183C768C2E883EB297C9D9AFE8 /* Release */,
+				F09AEC9CDC340FE310F4B208A9FBDE0A /* Debug */,
+				74CB3999E8F3E1BDC6E6B5D3144CACBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC7C2FFEBAF31FB3F7539544B7202A85 /* Build configuration list for PBXNativeTarget "Pods-M4Jam" */ = {
+		81297BF8711C111CC162289070DD0B98 /* Build configuration list for PBXNativeTarget "Pods-M4Jam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA240242BD37C011C8A7C7C589475CEE /* Debug */,
-				FAFC2261E218455768ACCFE22538240B /* Release */,
+				D8DF518C1A73200823C2AED2CAD1288A /* Debug */,
+				F95A7386B08B288C2B5169F20F81ED07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

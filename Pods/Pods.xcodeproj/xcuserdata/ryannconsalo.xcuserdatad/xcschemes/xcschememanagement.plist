@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>NWPusher.xcscheme</key>
+		<key>Pods-M4Jam.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-M4Jam.xcscheme</key>
+		<key>PusherSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>166F858CFFFABC31F5EDBDD337E56C3E</key>
+		<key>620363A9B3130ACB95CB1E1438FC97B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC9B68D42FD26A60BCEB86272B1E82B2</key>
+		<key>7F611E522EE86C13AB901C6D95E46873</key>
 		<dict>
 			<key>primary</key>
 			<true/>
